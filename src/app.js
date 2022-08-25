@@ -2,7 +2,9 @@
 
 import getCurrentTime from './clock';
 import getDay from './day';
+import getTask from './task';
 import './app.css';
+
 
 (function() {
   function setTime() {
@@ -17,20 +19,28 @@ import './app.css';
     document.getElementById('day').innerHTML = day;
   }
 
+  function setTask(value) {
+    let taskValue = value;
+    let taskText = getTask() + taskValue;
+
+    document.getElementById('task').innerHTML = taskText;
+  }
+
   function setupDashboard() {
     setDay();
     setTime();
+    setTask();
     setInterval(setTime, 1000);
   }
 
-  setupDashboard();
+  setupDashboard(taskInput);
 
   // Communicate with background file by sending a message
   chrome.runtime.sendMessage(
     {
       type: 'GREETINGS',
       payload: {
-        message: 'Hello, my name is Ove. I am from Override app.',
+        message: 'Hello, Im Marcin. This is Mantra app.',
       },
     },
     response => {

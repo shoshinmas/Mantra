@@ -36,6 +36,15 @@ body {
     font-weight: 600;
 }
 
+.task {
+    font-size: 26px;
+    font-weight: 600;
+    min-width: 300px;
+    max-width: 16em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .title {
     margin-top: 5px;
     font-size: 26px;

@@ -12,16 +12,13 @@
 
     <hr class="divider" />
 
-    <p class="title">Chrome Extension is Ready!</p>
-    <p class="subtitle">Start by updating <code>index.html</code></p>
+    <div id="task" class="task"></div>
+    <div class="wrapper">
+      <span class="subtitle">Enter:</span>
+      <input type="text" name="taskInput" id="taskInput" autocomplete="off" maxlength="24" placeholder="Task" />
+      <button onclick="setTask(taskInput)">Set Task</button>
+    </div>
   </div>
   <script src="app.js"></script>
-
-  <!--
-    This HTML file is a template for overriding pages like New Tab, Bookmarks, or History page.
-
-    To begin the development, run `npm run watch`.
-    To create a production bundle, use `npm run build`.
-  -->
 </body>
 </html>
