@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="container">
+    <p id="day" class="day"></p>
+    <div id="clock" class="clock"></div>
+
+    <hr class="divider" />
+
+    <div id="task" class="task"></div>
+    <div class="wrapper">
+      <span class="subtitle">Enter:</span>
+      <input type="text" name="taskInput" id="taskInput" autocomplete="off" maxlength="24" placeholder="Task" />
+      <button onclick="setTask(taskInput)">Set Task</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

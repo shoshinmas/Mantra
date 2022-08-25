@@ -1,0 +1,127 @@
+<body>
+	<div>
+		<div class="titleContainer">
+			<h5 class="trn">General</h5>
+		</div>
+
+		<div class="param">
+			<div class="showall wrapper">
+				<span class="trn">Show all settings</span>
+				<div>
+					<label class="switch">
+						<input id="i_showall" type="checkbox" />
+						<span class="slider round span"></span>
+					</label>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="wrapper">
+				<span class="trn">The task for today</span>
+				<input type="text" name="greeting" id="i_greeting" autocomplete="off" maxlength="24" placeholder="Name" />
+			</div>
+		</div>
+	</div>
+		
+	<div>
+		<div class="titleContainer">
+			<h5 class="trn">Background</h5>
+		</div>
+
+		<div class="param">
+			<div class="wrapper">
+				<span class="trn selector_span">Background type</span>
+				<select id="i_type" class="theme">
+					<option value="dynamic" class="trn">Dynamic</option>
+					<option value="custom" class="trn">Custom</option>
+				</select>
+			</div>
+
+			<hr />
+
+			<div class="wrapper freq_wrap">
+				<span class="trn">Frequency</span>
+				<div>
+					<select id="i_freq">
+						<option value="tabs" class="trn">Every tab</option>
+						<option value="hour" class="trn">Every hour</option>
+						<option value="period" class="trn">Daylight</option>
+						<option value="day" class="trn">Every day</option>
+						<option value="pause" class="trn">Pause</option>
+					</select>
+					<button id="i_refresh">
+						<span>↻</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="as as_collection">
+				<hr />
+
+				<div class="wrapper">
+					<span>
+						<span class="trn">Unsplash collection</span>
+						<div class="tooltip ttcoll">?</div>
+					</span>
+
+					<input
+						type="text"
+						name="collection"
+						id="i_collection"
+						autocomplete="off"
+						placeholder="2nVzlQADDIE"
+						maxlength="256"
+						spellcheck="false"
+						autocomplete="off"
+						autocorrect="off"
+						autocapitalize="off"
+					/>
+				</div>
+
+			</div>
+
+			<div id="custom">
+				<hr />
+
+				<div id="bg_tn_wrap">
+					<label id="uploadContainer">
+						<p class="trn">Upload background here</p>
+						<input id="i_bgfile" type="file" name="background_file" multiple />
+					</label>
+
+					<div id="fileContainer"></div>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="wrapper">
+				<span class="trn">Blur intensity</span>
+				<input id="i_blur" type="range" name="background_blur" min="0" max="50" value="0" step="1" class="range" />
+			</div>
+
+			<hr />
+
+			<div class="wrapper">
+				<span class="trn">Brightness</span>
+				<input
+					id="i_bright"
+					type="range"
+					class="range"
+					name="background_bright"
+					min="0"
+					max="1"
+					value=".80"
+					step=".01"
+				/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="signature">
+		<div class="firstblock">
+			<p class="version">Mantra 0.1.0</p>
+		</div>
+	</div>
+</body>
